@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JG Saree Heaven</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="JG Saree Heaven Logo">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="product details.html">Product Details</a></li>
+            </ul>
+            <div class="cart-container">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-number-container">0</div>
+            </div>
+        </nav>
+    </header>
+    <!-- User Accounts Section -->
+    <section class="user-accounts">
+        <h2>Secure User Accounts</h2>
+        <form action="register.php" method = "post">
+        <p>Securely save all your data and access it from anywhere by registering for a user account. Your information will be stored safely, and you can log in from any device to manage your tasks and appointments conveniently. Enjoy the flexibility of managing your tasks on the go!</p>
+        <button>Register Now</button>
+    </form>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="customization">
+        <h2>Customize Your Experience</h2>
+        <p>Make your task management experience truly yours by personalizing your lists with colors, tags, and categories. Organize your tasks the way you want, whether it's by project, priority, or due date. Tailor the app to suit your preferences and work style for enhanced productivity.</p>
+        <div class="customization-options">
+            <label>Colors:</label>
+            <input type="color" id="color-picker">
+
+            <label>Categories:</label>
+            <select id="category-select">
+                <option value="">Select a category</option>
+                <option value="types">Type</option>
+                <option value="color">Color</option>
+                <option value="price">Price</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Online Shopping Section -->
+    <section class="online-shopping">
+        <h2>Online Shopping Experience</h2>
+        <p>This feature allows users to explore a wide range of products conveniently from the comfort of their homes. The application provides a diverse selection of items across various categories, ensuring that users can find everything they need without visiting physical stores. This enhances the shopping experience by saving time and providing a hassle-free way to browse and purchase products.</p>
+        <div class="search-filter">
+            <input type="search" id="search-input" placeholder="Search for products">
+            <button id="search-btn">Search</button>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="clothing">Electronics</option>
+                <option value="styles">Clothing</option>
+                <option value="types">Home Goods</option>
+            </select>
+            <select id="price-filter">
+                <option value="">All Prices</option>
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+        </div>
+        <div class="product-grid">
+            <!-- Product Cards will be displayed here -->
+        </div>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

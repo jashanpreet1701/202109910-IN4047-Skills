@@ -1,0 +1,757 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: pink;
+    color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 600px;
+    height: 450px;
+   
+ 
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.site-name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+
+.hero {
+    background-image: linear-gradient(to bottom,pink, pink);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: black;
+    color: pink;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+footer {
+    background-color:pink;
+    color: black;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, button, input, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4a8e2;
+}
+
+header {
+    background-color: #82d8f0;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0d0b0b;
+    font-size: 16px;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.cart-container .fa-cart-shopping {
+    font-size: 24px;
+    color: #050404;
+    cursor: pointer;
+}
+
+.cart-number-container {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #007bff;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-accounts,
+.customization,
+.online-shopping {
+    padding: 40px;
+    text-align: center;
+}
+
+.user-accounts h2,
+.customization h2,
+.online-shopping h2 {
+    color: #0f0c0c;
+    margin-bottom: 20px;
+}
+
+.user-accounts p,
+.customization p,
+.online-shopping p {
+    color: #0b0909;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.user-accounts button,
+.customization button,
+.online-shopping button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.user-accounts button:hover,
+.customization button:hover,
+.online-shopping button:hover {
+    background-color: #0056b3;
+}
+
+.customization-options {
+    margin-top: 20px;
+}
+
+.customization-options label {
+    margin-right: 10px;
+    color: #0f0c0c;
+}
+
+.customization-options input[type="color"] {
+    margin-right: 20px;
+}
+
+.search-filter {
+    margin-top: 20px;
+}
+
+.search-filter input[type="search"],
+.search-filter select {
+    margin-right: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 80px; /* Adjust size as needed */
+    }
+
+    ul li {
+        margin-right: 10px;
+    }
+
+    .user-accounts,
+    .customization,
+    .online-shopping {
+        padding: 20px;
+    }
+
+    .user-accounts h2,
+    .customization h2,
+    .online-shopping h2 {
+        font-size: 24px;
+    }
+
+    .user-accounts p,
+    .customization p,
+    .online-shopping p {
+        font-size: 14px;
+    }
+
+    .user-accounts button,
+    .customization button,
+    .online-shopping button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+/* STYLE.CSS */
+
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #95d7ef;
+}
+
+header {
+    background-color: #e28282;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(14, 13, 13, 0.1);
+}
+
+.logo a {
+    text-decoration: none;
+    color: #080707;
+    font-size: 20px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input[type="text"] {
+    padding: 8px 30px 8px 10px;
+    border: 1px solid #d8af85;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.search ion-icon.s {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+main {
+    padding: 20px;
+}
+
+.slider {
+    margin-bottom: 40px;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 20%;
+    height: auto;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.slide-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    font-size: 16px;
+}
+
+.products {
+    text-align: center;
+}
+
+.products h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9dc6d9;
+    color: #0a0909;
+}
+
+.about-us {
+    padding: 40px;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-us h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    margin-bottom: 20px;
+}
+
+.about-us ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .about-us {
+        padding: 20px;
+    }
+
+    .about-us h2 {
+        font-size: 20px;
+    }
+
+    .about-us h3 {
+        font-size: 18px;
+    }
+
+    .about-us p {
+        font-size: 14px;
+    }
+
+    .about-us ul {
+        margin-bottom: 10px;
+    }
+
+    .about-us ul li {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b17272;
+    color: #090909;
+}
+
+.contact-us {
+    padding: 40px;
+}
+
+.contact-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    margin-bottom: 20px;
+}
+
+.contact-us label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us input[type="tel"],
+.contact-us textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-us textarea {
+    resize: vertical;
+}
+
+.contact-us button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .contact-us {
+        padding: 20px;
+    }
+
+    .contact-us h2 {
+        font-size: 20px;
+    }
+
+    .contact-us p {
+        font-size: 14px;
+    }
+
+    .contact-us input[type="text"],
+    .contact-us input[type="email"],
+    .contact-us input[type="tel"],
+    .contact-us textarea {
+        font-size: 14px;
+    }
+
+    .contact-us button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .contact-info h3 {
+        font-size: 18px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+}
+
+
+
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #92b6e9;
+    color: #0a0707;
+}
+
+.product-details {
+    padding: 40px;
+}
+
+.product-details .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    margin-right: 40px;
+}
+
+.product-image img {
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-info p span {
+    font-weight: bold;
+}
+
+.product-info ul {
+    margin-bottom: 20px;
+}
+
+.product-info ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-info ul li:first-child {
+    font-weight: bold;
+}
+
+.product-info ul li:last-child {
+    margin-bottom: 0;
+}
+
+.product-info ul li i {
+    color: #e0c073; /* Gold color for stars */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .product-details {
+        padding: 20px;
+    }
+
+    .product-details .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-image {
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    .product-info {
+        max-width: none;
+    }
+
+    .product-info h2 {
+        font-size: 20px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+    }
+
+    .product-info ul li {
+        font-size: 14px;
+    }
+}
+
+
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial;
+    background-color: #f2b0ce;
+    color: #0e0b0b;
+}
+
+.store-categories {
+    padding: 40px;
+}
+
+.store-categories h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.store-categories ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.store-categories li {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.store-categories img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .store-categories {
+        padding: 20px;
+    }
+
+    .store-categories h2 {
+        font-size: 20px;
+    }
+
+    .store-categories li {
+        flex-basis: calc(50% - 10px);
+    }
+}
